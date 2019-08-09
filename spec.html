@@ -5357,7 +5357,6 @@
           <p>The concrete Environment Record method InitializeBinding for object Environment Records is used to set the bound value of the current binding of the identifier whose name is the value of the argument _N_ to the value of argument _V_. An uninitialized binding for _N_ must already exist.</p>
           <emu-alg>
             1. Let _envRec_ be the object Environment Record for which the method was invoked.
-            1. Assert: _envRec_ must have an uninitialized binding for _N_.
             1. Record that the binding for _N_ in _envRec_ has been initialized.
             1. Return ? _envRec_.SetMutableBinding(_N_, _V_, *false*).
           </emu-alg>
